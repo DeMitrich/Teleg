@@ -4,7 +4,6 @@ import cherrypy
 import telebot
 import time
 import json
-import simple_game1
 
 BOT_TOKEN = '450087644:AAHREmBtANmyRbDu4uxVc3I7tK--L0qcVbs'
 
