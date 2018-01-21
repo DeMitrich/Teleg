@@ -4,7 +4,7 @@ import cherrypy
 import requests
 import telebot
 
-WEBHOOK_HOST = '139.59.146.78'
+WEBHOOK_HOST = '138.197.184.6'
 WEBHOOK_PORT = 443  # 443, 80, 88 или 8443
 WEBHOOK_LISTEN = '0.0.0.0' # Слушаем отовсюду
 WEBHOOK_SSL_CERT = 'webhook_cert.pem'  # Путь к сертификату
@@ -137,7 +137,7 @@ class WebhookServer(object):
 if __name__ == '__main__':
 
     bot_1.remove_webhook()
-    bot_1.set_webhook(url='https://139.59.146.78/AAAA',
+    bot_1.set_webhook(url='https://138.197.184.6/AAAA',
                     certificate=open(WEBHOOK_SSL_CERT, 'r'))
 
     # bot_2.remove_webhook()
