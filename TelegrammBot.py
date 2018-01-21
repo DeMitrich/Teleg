@@ -17,3 +17,11 @@ def msgUser(message):
     bot.send_message(message.chat.id, 'Hello'+message.chat.first_name)
 bot.polling(none_stop=True)
 
+
+if __name__ == '__main__':
+    cherrypy.config.update({
+        'server.socket_host': '127.0.0.1',
+        'server.socket_port': 7775,
+        'engine.autoreload.on': False
+    })
+    cherrypy.quickstart(WebhookServer(), '/', {'/': {}})
